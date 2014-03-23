@@ -7,12 +7,16 @@ researchers in this field. Investigators using scikit-image can focus directly
 on their work, maximizing productivity, rather than expending time and effort
 on these tasks.
 
-scikit-image includes many algorithms with broad applications across imaging
-research, from computer vision to medical image analysis, and the tools
-available continually increase in number and capability. This section
-illustrates a few examples of real problems researchers face, and how
-scikit-image provides elegant solutions. We refer the reader to the current
-API documentation for a full listing of current capabilities [APIdocs]_.
+scikit-image includes many algorithms with broad applications across
+imaging research, from computer vision to medical image analysis, and the
+tools available continually increase in number and capability. The
+convenient API and the interactivity of scikit-image within IPython
+make scikit-image a tool of choice for the prototyping phases that are
+crucial in research or developement, without compromising on performance.
+This section illustrates a few examples of real problems researchers
+face, and how scikit-image provides elegant solutions. We refer the
+reader to the current API documentation for a full listing of current
+capabilities [APIdocs]_.
 
 scikit-image may be used to extract information about patterns in large stacks
 of images. For instance, let us consider the drying of a droplet containing

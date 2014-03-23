@@ -16,6 +16,10 @@ is also used for feature extraction. It is important to locate grain boundaries
 Grain boundaries are found by applying a thinning algorithm (``morphology.skeletonize``) 
 to the results of edge detection (``filter.sobel``) for the optical image.
 
+[emma: if we need to save some space, I'm not sure that Fig. :ref:`PL1`
+is needed; what's most interesting is the comparison between Figure
+:ref:`PL2` and Figure :ref:`PL3`]
+
 The image processing results are input to machine learning
 algorithms, which assess intrinsic wafer quality. Solar cell manufacturers
 can use this information to reject poor quality wafers and charge more 

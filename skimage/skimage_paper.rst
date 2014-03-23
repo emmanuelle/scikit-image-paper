@@ -3,8 +3,8 @@
 :institution: Stellenbosch University
 
 :author: Emmanuelle Gouillart
-:email: your@email.com
-:institution: Your Institute
+:email: emmanuelle.gouillart@saint-gobain.com
+:institution: Joint Unit CNRS / Saint-Gobain
 
 :author: Tony Yu
 :email: your@email.com
@@ -53,11 +53,12 @@ scikit-image: Image processing in Python
 
 .. class:: abstract
 
-   ``scikit-image`` is an image processing library which implements algorithms
-   and utilities for use in research, education and industry application.  It
-   is released under a liberal open source license, provides a well-documented
-   API in the Python programming language, and is developed by an active
-   international team of collaborators.
+   ``scikit-image`` is an image processing library which implements
+   algorithms and utilities for use in research, education and industry
+   application.  It is released under a liberal open source license,
+   provides a well-documented and simple API in the Python programming
+   language, and is developed by an active international team of
+   collaborators.
 
 .. class:: keywords
 

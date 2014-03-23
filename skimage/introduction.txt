@@ -1,7 +1,8 @@
 In the data-rich world we live in, images represent a significant subset of all
 measurements made.  Examples include DNA microarrays, microscopy slides,
-telescopic observations, satellite maps, robotic vision capture and synthetic
-aperture radar images.
+telescopic observations, satellite maps, robotic vision capture, synthetic
+aperture radar images, or larger-dimension images such as 3-D medical
+resonance imaging or computed tomography images.
 
 To explore this rich data source and to fully understand and interpret its
 meaning requires sophisticated software tools--tools that, for reasons
@@ -13,9 +14,10 @@ With the rising popularity of Python as a scientific programming language
 complementary tools, it seems like the ideal environment in which to produce
 an image processing toolkit.
 
-This paper describes scikit-image, a collection of image processing algorithms
-implemented in the Python programming language by an active community of
-volunteers and available under a liberal Open Source license.
+This paper describes scikit-image [scikit-image]_, a collection of image
+processing algorithms implemented in the Python programming language by
+an active community of volunteers and available under a liberal Open
+Source license.
 
 The project aims are:
 
@@ -46,6 +48,14 @@ The project aims are:
    commercial packages.  Companies may use the library entirely free of charge,
    and have the option of contributing changes back, should they so wish.
 
+Getting started
+===============
+
+[emma: how about having a small "getting started" section, with a small
+block of code and an image, as we have on the website with the coins
+example? It would be more meaningful for the reader to be exposed to some
+code from the start...]
+
 Content
 =======
 
@@ -72,20 +82,21 @@ contains the following sub-modules:
 - morphology: Morphological operations, e.g., opening or skeletonization.
 - novice: Simplified interface for teaching purposes.
 - restoration: Deconvolution algorithms.
-- segmentation: Splitting an image into self-similar regions.
+- segmentation: Splitting an image into self-similar regions. [emma: I'm not sure I understand this definition, in particular the use of self-similar. How about attributing pixels to different regions, or splitting an image into multiple regions?]
 - transform: Geometric and other transforms, e.g., rotation or the Radon transform.
 - viewer: A simple graphical user interface for visualizing results and exploring parameters.
 
 Data format
 ===========
 
-scikit-image uses NumPy arrays [numpy]_ to represent images.  Each array has a
-shape, e.g., ``(M, N)`` for grey-level images, ``(M, N, P)`` for multi-channel
-images, or ``(M, N, P, Q)`` for temporal and other multi-dimensional data.  In
-addition, it has a data-type such as ``float`` or ``uint8``, that describes the
-numerical type of the elements stored.  Since NumPy arrays are a standard
-representation for homogeneous data in Python, data can be passed along as-is
-to most other tools such as NumPy, SciPy, matplotlib, [scikit-learn]_, OpenCV,
+scikit-image uses NumPy arrays [numpy]_ to represent images.  Each array
+has a shape, e.g., ``(M, N)`` for grey-level images, ``(M, N, P)`` for
+multi-channel images, or ``(M, N, P, Q)`` for temporal and other
+multi-dimensional data.  In addition, it has a data-type such as
+``float`` or ``uint8``, that describes the numerical type of the elements
+stored.  Since NumPy arrays are a standard and efficient representation
+for homogeneous data in Python, data can be passed along as-is to most
+other tools such as NumPy, SciPy, matplotlib, [scikit-learn]_, OpenCV,
 etc.
 
 An image collection class (see `skimage.io.ImageCollection`) is provided for
@@ -105,7 +116,9 @@ most common image representation is in floating-point format (data-type
 `float`), with values between 0 and 1 (unsigned image) or -1 and 1 (signed
 image).
 
+[emma: give an example here?]
 
+.. [scikit-image] scikit-image, http://scikit-image.org/ 
 .. [ohloh] Scikit-image on Ohloh, https://www.ohloh.net/p/scikit-image
 .. [numpy] S van der Walt, CS Colbert, G Varoquaux. "The NumPy array: a
    structure for efficient numerical computation", Computing in
